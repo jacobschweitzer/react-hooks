@@ -21,7 +21,7 @@ function useLocalStorageState(key, defaultValue = '') {
     [key,state]
   );
 
-  return [JSON.parse(state),setState];
+  return [state,setState];
 }
 
 function Greeting({initialName = ''}) {
